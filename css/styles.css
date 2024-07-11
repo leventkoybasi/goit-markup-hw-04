@@ -14,6 +14,14 @@ img {
 button {
   cursor: pointer;
 }
+/* Icon Set Features */
+.feature-icon {
+  fill: #0bf040;
+}
+/* Icon Set Social */
+.social-icon {
+  fill: #404bbf;
+}
 /* Body */
 body {
   font-family: "Roboto", sans-serif;
