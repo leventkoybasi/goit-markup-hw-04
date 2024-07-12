@@ -42,7 +42,7 @@ button {
 .social-icon {
   fill: var(--ocean);
 }
-.icon-box {
+.icon-box-features {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,6 +51,22 @@ button {
   border-radius: 4px;
   width: 264px;
   height: 112px;
+}
+.our-team-social-icons-set {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.our-team-social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  gap: 24px;
+  border-radius: 50%;
+  background-color: var(--iris);
 }
 
 /* Body */
@@ -149,8 +165,17 @@ body {
 /* Main */
 /* Section 1 - Solution */
 .section-solution {
-  background-color: var(--navy-blue);
-  padding: 188px 0;
+  background: url(../images/people-office\ 1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-blend-mode: lighten;
+}
+.section-solution-bgc {
+}
+.section-solution-darkscreen {
+  background: var(--grey);
+  height: 600px;
 }
 .section-solution-container {
   display: flex;
@@ -158,6 +183,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 48px;
+  padding: 188px 0;
 }
 .main-title {
   font-size: 56px;
@@ -244,7 +270,10 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 .our-team-name-title {
-  padding: 32px 0;
+  margin: 32px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 .our-team-list-title {
   font-weight: 500;
@@ -256,11 +285,13 @@ body {
   margin-bottom: 8px;
 }
 .our-team-text {
+  font-family: var(--font-family);
+  font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 150%;
   letter-spacing: 0.02em;
-  color: var(--slate);
   text-align: center;
+  color: var(--slate);
 }
 /* Section 4 - Our-Portfolio */
 .our-portfolio-section {
