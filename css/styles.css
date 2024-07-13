@@ -1,5 +1,7 @@
 /* Reset Css */
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -112,8 +114,6 @@ body {
 .navbar {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .logo {
@@ -172,18 +172,19 @@ body {
 /* Main */
 /* Section 1 - Solution */
 .section-solution {
-  background: url(../images/people-office\ 1.jpg);
+  background-color: var(--navy-blue);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office\ 1.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   width: 1440px;
   margin: 0 auto;
-}
-
-.section-solution-darkscreen {
-  background: var(--grey);
-  width: 1440px;
-  margin: 0 auto;
+  border: 1px solid #000000;
 }
 
 .section-solution-container {
@@ -201,6 +202,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--white);
   max-width: 496px;
+  margin: 0 auto;
 }
 .order-button {
   cursor: pointer;
