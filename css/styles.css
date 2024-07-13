@@ -436,7 +436,11 @@ body {
 }
 .footer-helper {
   display: flex;
+  align-items: baseline;
   gap: 120px;
+}
+.footer-text-logo {
+  margin-right: 120px;
 }
 .footer-social {
   display: flex;
@@ -447,6 +451,12 @@ body {
   display: flex;
   gap: 16px;
 }
+.link-footer:hover {
+  background-color: var(--green);
+}
+.link-footer:focus {
+  background-color: var(--green);
+}
 
 .footer-social-title {
   font-family: var(--font-family);
@@ -455,4 +465,5 @@ body {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: var(--white);
+  margin-bottom: 16px;
 }
